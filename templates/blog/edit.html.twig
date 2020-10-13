@@ -111,7 +111,7 @@
             let imageInputDiv = imageInput.parentElement;
             imageInputDiv.innerHTML =
                 '<input type="hidden" id="blog_post_blogImages_'+ objectIndex +'_image"'
-                + 'name="blog_post[blogImages]['+ objectIndex +'][image]" value="' + fileName +'">';
+                + ' name="blog_post[blogImages]['+ objectIndex +'][image]" value="' + fileName +'">';
             let imageInputP = document.createElement('p');
             let pText = document.createTextNode(fileName);
             imageInputP.appendChild(pText);
@@ -124,7 +124,7 @@
             imageSubtext.innerHTML = subtext;
 
             let imgElement = document.createElement('img');
-            imgElement.setAttribute('src', '/{{ filePath }}/' + fileName );
+            imgElement.setAttribute('src', '/uploads/images/' + fileName );
             imgElement.setAttribute('alt', alt);
             imageInputDiv.appendChild(imgElement);
 

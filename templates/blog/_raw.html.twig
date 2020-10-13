@@ -8,7 +8,7 @@
         {% for image in post.blogImages %}
             <li>
                 <p>{{ image.image.fileName }}</p>
-                <img src="/{{ filePath }}/{{ image.image.fileName }}" alt="{{ image.image.alt }}" />
+                <img src="/uploads/images/{{ image.image.fileName }}" alt="{{ image.image.alt }}" />
                 <p>{{ image.image.alt }}</p>
                 <p>{{ image.subText }}</p>
 
